@@ -1,0 +1,201 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  
+    
+
+}
+.content a{
+    text-decoration: none;
+}
+
+.head a{
+    text-decoration: none;
+    color: black;
+    font-size: 20;
+}
+.head header a{
+    color: black;
+    font-size: 30px;
+}
+
+img{
+    background-size: cover;
+    background-position:center ;
+    height: 70vh;
+    width: 100%;
+}
+body{
+    background-image: url("ss.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.head{
+    display: flex;
+    
+}
+header{
+    flex: 3;
+    font-size: 30px;
+    display: flex;
+    padding: 20px;
+    font-weight: bolder;
+}
+nav{
+    display: flex;
+    flex: 2;
+    padding: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+nav a{
+    flex:2;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: center;
+    text-align:center ;
+    font-size: 30px;
+    color: #EFB036;
+}
+h5{
+    color: #09122C;
+    font-weight: bold;
+}
+h6{
+    color: white;
+    font-weight: bolder;
+    padding: 2px;
+}
+    
+.s{
+    width:10%;
+    background-color: #6E8E59;
+    padding: 10px;
+    color:#09122C;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 20px;
+
+}
+nav a:hover{
+    color:white ;
+    
+}
+.button{
+    display: inline-block;
+    align-items: center;
+}
+footer {
+    background-color: #333;
+    width: 100%;
+    color: white;
+    text-align: center;
+    
+    position: absolute;
+    bottom: 0;
+    
+
+}
+/* Tablet devices (768px and below) */
+@media (max-width: 768px) {
+    header, nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .content {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .s {
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+    header {
+        font-size: 24px;
+    }
+
+    .head header a {
+        font-size: 24px;
+    }
+
+    nav {
+        font-size: 16px;
+    }
+
+    .content {
+        font-size: 20px;
+    }
+
+    h2, h5, h6 {
+        font-size: 18px;
+    }
+
+    .s {
+        font-size: 16px;
+        padding: 8px;
+        width: 80%;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+#music-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  #music-btn {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fddcbe;
+    color: #333;
+    border: none;
+    cursor: pointer;
+  }
+  #music-btn:hover {
+    background-color: #e3a36f;
+  }
+
+
